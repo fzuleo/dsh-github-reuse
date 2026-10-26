@@ -1,0 +1,50 @@
+{
+  "name": "dsh-github-reuse",
+  "version": "0.1.0",
+  "description": "DSH 插件：让 agent 在线检索并复用 GitHub 开源项目，用成熟实现拼装功能（零克隆、不占磁盘）",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "README.md",
+    "README.en.md",
+    "cordis.patch.yml",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "github",
+    "open-source",
+    "reuse",
+    "agent"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.0",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fzuleo/dsh-github-reuse.git"
+  },
+  "homepage": "https://github.com/fzuleo/dsh-github-reuse#readme",
+  "bugs": {
+    "url": "https://github.com/fzuleo/dsh-github-reuse/issues"
+  },
+  "author": "洪凌胜"
+}

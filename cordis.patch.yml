@@ -1,0 +1,4 @@
+# dsh-github-reuse：在线检索 / 体检 / 读取 GitHub 开源项目，零克隆。
+- insert:
+    - id: github-reuse
+      name: 'dsh-github-reuse'
